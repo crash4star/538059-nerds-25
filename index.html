@@ -52,39 +52,31 @@
 				</section>
 			</main>
 			<footer class="main-footer">
-				<div class="footer-social">
-				<ul>
+				<ul class="footer-social">
 					<li>
-						<a class="social-button" href="#" aria-label="Группа Вконтакте">
-							<img src="img/vk-icon.svg" width="26" height="15" alt="Иконка Вконтакте">
-						</a>
+						<a class="social-button" href="#" aria-label="Группа Вконтакте">Вконтакте</a>
 					</li>
 					<li>
-						<a class="social-button" href="#" aria-label="Группа Фэйсбук">
-							<img src="img/fb-icon.svg" width="12" height="22" alt="Иконка Фэйсбук">
-						</a>
+						<a class="social-button" href="#" aria-label="Группа Фэйсбук">Facebook</a>
 					</li>
 					<li>
-						<a class="social-button" href="#" aria-label="Страница Инстаграм">
-							<img src="img/insta-icon.svg" width="21" height="21" alt="Иконка Инстаграм">
-						</a>
+						<a class="social-button" href="#" aria-label="Страница Инстаграм">Instagram</a>
 					</li>
 				</ul>
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
-				</div>
 			</footer>
 			<section class="write-us">
-				<form class="write-us-form" action="#" method="get">
+				<form class="write-us-form" action="#" method="post">
 					<h1>Напишите нам</h1>
-					<button type="button" class="write-us-close-btn" aria-label="Кнопка закрытия формы отправки"></button>
+					<button type="button" class="write-us-close-btn" value="close-write-us-pop-up"></button>
 					<label for="name-field">Ваше имя:</label>
-					<input type="text" name="first-last-name" id="name-field" placeholder="Имя Фамилия" aria-label="Поле для ввода имя и фамилии">
+					<input type="text" name="first-last-name" id="name-field" placeholder="Имя Фамилия" value="enter-name">
 					<label for="mail-field">Ваш e-mail:</label>
-					<input type="text" name="first-last-name" id="mail-field" placeholder="email@example.com" aria-label="Поле для электронной почты">
+					<input type="text" name="first-last-name" id="mail-field" placeholder="email@example.com" value="enter-mail">
 					<label for="mail-content">Текст письма:</label>
-					<textarea name="mail-body" id="mail-content" placeholder="В свободной форме" aria-label="Поле содержания письма"></textarea>
-					<button type="submit" name="send-btn" class="write-us-send-btn" aria-label="Кнопка отправить">Отправить</button>
+					<textarea name="mail-body" id="mail-content" placeholder="В свободной форме" values="enter-content-mail"></textarea>
+					<button type="submit" name="send-btn" class="write-us-send-btn" value="send-answer-result">Отправить</button>
 				</form>
 			</section>
 		</body>
