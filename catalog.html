@@ -12,60 +12,120 @@
 				</a>
 				<ul class="site-navigation">
 					<li>
-						<a href="#">Студия</a>
+						<a href="#" aria-label="Раздел студия">Студия</a>
 					</li>
 					<li>
-						<a href="#">Клиенты</a>
+						<a href="#" aria-label="Раздел клиенты">Клиенты</a>
 					</li>
 					<li>
-						<a href="#">Магазин</a>
+						<a href="#" aria-label="Раздел магазин">Магазин</a>
 					</li>
 					<li>
-						<a href="#">Контакты</a>
+						<a href="#" aria-label="Раздел контакты">Контакты</a>
 					</li>
 				</ul>
-				<a href="#">Корзина</a>
+				<a href="#" aria-label="Корзина">Корзина</a>
 				</nav>
 			</header>
 			<main class="container">
 				<h1>Магазин готовых шаблонов</h1>
 				<section class="filters">
-					<h2>Фильтр шаблонов</h2>
+					<form action="#" method="get">
+						<h2 class="visually-hidden">Фильтр шаблонов</h2>
+						<fieldset class="grid">
+							<legend>Сетка</legend>
+							<ul class="templates-grids">
+								<li>
+									<input type="radio" name="grid-btn" id="adaptive-grid" aria-label="Адаптивная сетка" checked>
+								    <label for="adaptive-grid">Адаптивная</label>
+								</li>
+								<li>
+									<input type="radio" name="grid-btn" id="fixed-grid" aria-label="Фиксированная сетка">
+							        <label for="fixed-grid">Фиксированная</label>
+								</li>
+								<li>
+									<input type="radio" name="grid-btn" id="elastic-grid" aria-label="Резиновая сетка">
+							        <label for="fixed-grid">Резиновая</label>
+								</li>
+						    </ul>
+						</fieldset>
+						<fieldset>
+							<legend>Особенности</legend>
+							<ul class="templates-features">
+								<li>
+									<input type="checkbox" name="slider" id="slider-feature" aria-label="Выбрать слайдер" checked>
+									<label for="slider-feature">Слайдер</label>
+								</li>
+								<li>
+									<input type="checkbox" name="features-block" id="features-block-feature" aria-label="Выбрать блок преимуществ">
+									<label for="slider-feature">Блок преимуществ</label>
+								</li>
+								<li>
+									<input type="checkbox" name="news" id="news-feature" aria-label="Выбрать новости" checked>
+									<label for="news-feature">Новости</label>
+								</li>
+								<li>
+									<input type="checkbox" name="galery" id="galery-feature" aria-label="Выбрать галерея">
+									<label for="galery-feature">Галерея</label>
+								</li>
+								<li>
+									<input type="checkbox" name="basket" id="basket-feature" aria-label="Выбрать корзина">
+									<label for="basket-feature">Корзина</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button type="button" name="view-btn" class="view-filter-btn" aria-label="Показать результат фильтра">Показать</button>
+					</form>
 				</section>
 				<section class="catalog">
 					<ul class="catalog-list">
 						<li class="catalog-item">
-							<a href="#">Sedona</a>
+							<a href="#" aria-label="Перейти на страницу шаблона Sedona">Sedona</a>
 							<p>Информационный сайт для туристов</p>
-							<a href="#">
+							<a href="#" aria-label="Перейти на страницу шаблона Sedona">
 								<img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Sedona">
 							</a>
-							<a class="button" href="#">9 900 руб.</a>
+							<a class="button" href="#" aria-label="Купить шаблон Sedona за 9 900 рублей.">9 900 руб.</a>
 						</li>
 						<li class="catalog-item">
-							<a href="#">
+							<a href="#" aria-label="Перейти на страницу шаблона Pink">Pink app</a>
+							<p>Продуктовый лендинг приложения для iOS и Android</p>
+							<a href="#" aria-label="Перейти на страницу шаблона Pink">
 								<img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Pink">
 							</a>
+							<a class="button" href="#" aria-label="Купить шаблон Pink за 9 900 рублей.">9 900 руб.</a>
 						</li>
 						<li class="catalog-item">
-							<a href="#">
+							<a href="#" aria-label="Перейти на страницу шаблона барбершоп Бородинский">Barbershop</a>
+							<p>Сайт салона красоты Для мужчин, да.</p>
+							<a href="#" aria-label="Перейти на страницу шаблона барбершопа Бородинский">
 								<img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон барбершопа Бородинский">
 							</a>
+							<a class="button" href="#" aria-label="Купить шаблон барбершоп Бородинский за 9 900 рублей.">9 900 руб.</a>
 						</li>
 						<li class="catalog-item">
-							<a href="#">
+							<a href="#" aria-label="Перейти на страницу шаблона Mishka">Mishka</a>
+							<p>Интернет-магазин вязаных игрушек</p>
+							<a href="#" aria-label="Перейти на страницу шаблона Mishka">
 								<img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон Mishka">
 							</a>
+							<a class="button" href="#" aria-label="Купить шаблон Mishka за 9 900 рублей.">9 900 руб.</a>
 						</li>
 						<li class="catalog-item">
-							<a href="#">
-								<img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон Aplus">
+							<a href="#" aria-label="Перейти на страницу шаблона A Plus">A Plus</a>
+							<p>Лендинг курсов повышения квалификации</p>
+							<a href="#" aria-label="Перейти на страницу шаблона Aplus">
+								<img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон A Plus">
 							</a>
+							<a class="button" href="#" aria-label="Купить шаблон A Plus за 9 900 рублей.">9 900 руб.</a>
 						</li>
 						<li class="catalog-item">
-							<a href="#">
-								<img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Kvast">
+							<a href="#" aria-label="Перейти на страницу шаблона Кваст">Кваст</a>
+							<p>Промо-сайт производителя крафтового кваса</p>
+							<a href="#" aria-label="Перейти на страницу шаблона Кваст">
+								<img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Кваст">
 							</a>
+							<a class="button" href="#" aria-label="Купить шаблон Кваст за 9 900 рублей.">9 900 руб.</a>
 						</li>
 					</ul>
 				</section>
@@ -74,18 +134,37 @@
 				<div class="footer-social">
 				<ul>
 					<li>
-						<a class="social-button" href="#">Вконтакте</a>
+						<a class="social-button" href="#" aria-label="Группа Вконтакте">
+							<img src="img/vk-icon.svg" width="26" height="15" alt="Иконка Вконтакте">
+						</a>
 					</li>
 					<li>
-						<a class="social-button" href="#">Facebook</a>
+						<a class="social-button" href="#" aria-label="Группа Фэйсбук">
+							<img src="img/fb-icon.svg" width="12" height="22" alt="Иконка Фэйсбук">
+						</a>
 					</li>
 					<li>
-						<a class="social-button" href="#">Instagram</a>
+						<a class="social-button" href="#" aria-label="Страница Инстаграм">
+							<img src="img/insta-icon.svg" width="21" height="21" alt="Иконка Инстаграм">
+						</a>
 					</li>
 				</ul>
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 				</div>
 			</footer>
+			<section class="write-us">
+				<form class="write-us-form" action="#" method="get">
+					<h1>Напишите нам</h1>
+					<button type="button" class="write-us-close-btn" aria-label="Кнопка закрытия формы отправки"></button>
+					<label for="name-field">Ваше имя:</label>
+					<input type="text" name="first-last-name" id="name-field" placeholder="Имя Фамилия" aria-label="Поле для ввода имя и фамилии">
+					<label for="mail-field">Ваш e-mail:</label>
+					<input type="text" name="first-last-name" id="mail-field" placeholder="email@example.com" aria-label="Поле для электронной почты">
+					<label for="mail-content">Текст письма:</label>
+					<textarea name="mail-body" id="mail-content" placeholder="В свободной форме" aria-label="Поле содержания письма"></textarea>
+					<button type="submit" name="send-btn" class="write-us-send-btn" aria-label="Кнопка отправить">Отправить</button>
+				</form>
+			</section>
 		</body>
 </html>

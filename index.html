@@ -12,38 +12,41 @@
 				</a>
 				<ul class="site-navigation">
 					<li>
-						<a href="#">Студия</a>
+						<a href="#" aria-label="Раздел студия">Студия</a>
 					</li>
 					<li>
-						<a href="#">Клиенты</a>
+						<a href="#" aria-label="Раздел клиенты">Клиенты</a>
 					</li>
 					<li>
-						<a href="catalog.html">Магазин</a>
+						<a href="catalog.html" aria-label="Раздел магазин">Магазин</a>
 					</li>
 					<li>
-						<a href="#">Контакты</a>
+						<a href="#" aria-label="Раздел контакты">Контакты</a>
 					</li>
 				</ul>
-				<a href="#">Корзина</a>
+				<a href="#" aria-label="Корзина"><img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина</a>
 				</nav>
 			</header>
 			<main class="second-container">
 				<section class="services">
 					<ul class="services-list">
 						<li class="services-item">
+							<img src="img/sites-laptop.jpg" width="300" height="146" alt="Картинка ноутбука с сайтом">
 							<h3>Веб-сайты</h3>
 							<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-							<a class="button" href="#">Заказать</a>
+							<a class="button" href="#" aria-label="Кнопка заказа веб-сайта">Заказать</a>
 						</li>
 						<li class="services-item">
+							<img src="img/app-mobile.jpg" width="300" height="146" alt="Картинка мобильного приложения">
 							<h3>Приложения</h3>
 							<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-							<a class="button" href="#">Заказать</a>
+							<a class="button" href="#" aria-label="Кнопка заказа приложения">Заказать</a>
 						</li>
 						<li class="services-item">
+							<img src="img/presentation.jpg" width="300" height="146" alt="Картинка презентации">
 							<h3>Презентации</h3>
 							<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-							<a class="button" href="#">Заказать</a>
+							<a class="button" href="#" aria-label="Кнопка заказа презентации">Заказать</a>
 						</li>
 					</ul>
 				</section>
@@ -52,18 +55,37 @@
 				<div class="footer-social">
 				<ul>
 					<li>
-						<a class="social-button" href="#">Вконтакте</a>
+						<a class="social-button" href="#" aria-label="Группа Вконтакте">
+							<img src="img/vk-icon.svg" width="26" height="15" alt="Иконка Вконтакте">
+						</a>
 					</li>
 					<li>
-						<a class="social-button" href="#">Facebook</a>
+						<a class="social-button" href="#" aria-label="Группа Фэйсбук">
+							<img src="img/fb-icon.svg" width="12" height="22" alt="Иконка Фэйсбук">
+						</a>
 					</li>
 					<li>
-						<a class="social-button" href="#">Instagram</a>
+						<a class="social-button" href="#" aria-label="Страница Инстаграм">
+							<img src="img/insta-icon.svg" width="21" height="21" alt="Иконка Инстаграм">
+						</a>
 					</li>
 				</ul>
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 				</div>
 			</footer>
+			<section class="write-us">
+				<form class="write-us-form" action="#" method="get">
+					<h1>Напишите нам</h1>
+					<button type="button" class="write-us-close-btn" aria-label="Кнопка закрытия формы отправки"></button>
+					<label for="name-field">Ваше имя:</label>
+					<input type="text" name="first-last-name" id="name-field" placeholder="Имя Фамилия" aria-label="Поле для ввода имя и фамилии">
+					<label for="mail-field">Ваш e-mail:</label>
+					<input type="text" name="first-last-name" id="mail-field" placeholder="email@example.com" aria-label="Поле для электронной почты">
+					<label for="mail-content">Текст письма:</label>
+					<textarea name="mail-body" id="mail-content" placeholder="В свободной форме" aria-label="Поле содержания письма"></textarea>
+					<button type="submit" name="send-btn" class="write-us-send-btn" aria-label="Кнопка отправить">Отправить</button>
+				</form>
+			</section>
 		</body>
 </html>
