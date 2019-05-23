@@ -1,0 +1,298 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-header {
+	background-color: #eeeeee;
+}
+.main-navigation {
+	font-size: 16px;
+	line-height: 30px;
+	color: #000000;
+	background-color: #eeeeee;
+}
+
+.main-header-logo:hover {
+	opacity: 0.8;
+}
+
+.main-header-logo:focus {
+	opacity: 0.3;
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:active {
+	color: red;
+}
+
+.site-navigation a:hover {
+	color: #fb565a;
+}
+
+.site-navigation a:focus {
+	color: #bdbdbd;
+}
+
+.user-basket a {
+	color: #000000;
+}
+
+.user-basket a:hover {
+	color: #fb565a;
+}
+
+.user-basket a:focus {
+	color: #bdbdbd;
+}
+
+.services-list {
+	list-style: none;
+}
+
+.services-item h3 {
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.services-item p {
+	font-size: 16px;
+	line-height: 30px;
+	color: #283136;
+}
+
+.button {
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	vertical-align: middle;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.btn-red {
+	background-color: #fb565a;
+	color: #ffffff;
+	font-weight: 500;
+}
+
+.btn-red:hover {
+	background-color: #e74246;
+}
+
+.btn-red:focus {
+	background-color: #d7373b;
+	color: rgba(255,255,255,0.3);
+
+}
+.btn-green {
+	background-color: #00ca74;
+	color: #ffffff;
+	font-weight: 500;
+}
+
+.btn-green:hover {
+	background-color: #00bc6c;
+}
+
+.btn-green:focus {
+	background-color: #00aa62;
+	color: rgba(255,255,255,0.3);
+}
+
+.btn-yellow {
+	background-color: #efc84a;
+	color: #ffffff;
+	font-weight: 500;
+}
+
+.btn-yellow:hover {   
+	background-color: #eab534;
+}
+
+.btn-yellow:focus {
+	background-color: #e5a722;
+	color: rgba(255,255,255,0.3);
+} 
+
+.main-footer {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.footer-social a {
+	color: #000000;
+}
+
+.footer-social {
+	text-align: left;
+	list-style: none;
+}
+
+.main-footer b {
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.main-footer p {
+	font-size: 16px;
+	line-height: 22px;
+	color: #444444;
+}
+
+.write-us {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.write-us-form h1 {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.write-us-close-btn {
+	background-color: #fecccd;
+}
+
+.write-us-close-btn:hover {
+	background-color: #fb565a;
+}
+
+.write-us-close-btn:focus {
+	background-color: #ffeeee;
+}
+
+.write-us-form input[type="text"],
+.write-us-form textarea {
+	font: inherit;
+	color: #000000;
+	background-color: #ffffff;
+	border: 2px solid #d7dcde;
+}
+
+.write-us-form span {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+}
+
+.write-us-form input:hover {
+	border-color: #b4b9bb;
+}
+
+.write-us-form input:focus {
+	border-color: #000000;
+}
+
+.write-us-form textarea:hover {
+	border-color: #b4b9bb;
+}
+
+.write-us-form textarea:focus {
+	border-color: #000000;
+}
+
+.write-us-form input:invalid {
+	border-color: red;
+}
+
+
+.main-header h1 {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.visually-hidden {
+	position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.filters legend {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.templates-features span  {
+	font-size: 16px;
+	line-height: 20px;
+	color: #283136;
+}
+
+.templates-grids span  {
+	font-size: 16px;
+	line-height: 20px;
+	color: #283136;
+}
+
+.filters ul {
+	list-style: none;
+}
+
+.view-filter-btn {
+	background-color: #eeeeee;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.view-filter-btn:hover {
+	background-color: #dfdfdf;
+}
+
+.view-filter-btn:focus {
+	background-color: #d5d5d5;
+	color: rgba(0,0,0,0.3);
+}
+
+.catalog-list {
+	list-style: none;
+}
+
+.template-name {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.catalog-item p{
+	font-size: 16px;
+	line-height: 18px;
+	color: #666666;
+}
+
+.template-name:hover {
+	color: #fb565a;
+}
+
+.template-name:focus {
+	color: #d2d2d2;
+}
+
+
+

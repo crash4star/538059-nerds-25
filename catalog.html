@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Магазин готовых шаблонов</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 		<body>
 			<header class="main-header">
@@ -22,30 +25,32 @@
 					</li>
 					<li>
 						<a href="#" aria-label="Раздел контакты">Контакты</a>
-					</li>
+					</li> 
 				</ul>
-				<a href="#" aria-label="Корзина"><img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина</a>
+				<div class="user-basket">
+					<a href="#" aria-label="Корзина"><img src="img/cart-icon.jpg" width="15" height="15" alt="Иконка корзины">Корзина</a>
+			    </div>
 				</nav>
+				<h1>Магазин готовых шаблонов</h1>
 			</header>
 			<main class="container">
-				<h1>Магазин готовых шаблонов</h1>
 				<section class="filters">
 					<form action="#" method="get">
 						<h2 class="visually-hidden">Фильтр шаблонов</h2>
-						<fieldset class="grid">
+						<fieldset>
 							<legend>Сетка</legend>
 							<ul class="templates-grids">
 								<li>
 									<input type="radio" name="grid-btn" id="adaptive-grid" value="adaptive-grid-val" checked>
-								    <label for="adaptive-grid">Адаптивная</label>
+								    <label for="adaptive-grid"><span>Адаптивная</span></label>
 								</li>
 								<li>
 									<input type="radio" name="grid-btn" id="fixed-grid" value="fixed-grid-val">
-									<label for="fixed-grid">Фиксированная</label>
+									<label for="fixed-grid"><span>Фиксированная</span></label>
 								</li>
 								<li>
 									<input type="radio" name="grid-btn" id="elastic-grid" value="elastic-grid-val">
-							        <label for="fixed-grid">Резиновая</label>
+							        <label for="fixed-grid"><span>Резиновая</span></label>
 								</li>
 						    </ul>
 						</fieldset>
@@ -54,41 +59,41 @@
 							<ul class="templates-features">
 								<li>
 									<input type="checkbox" name="slider" id="slider-feature" value="slider-choice" checked>
-									<label for="slider-feature">Слайдер</label>
+									<label for="slider-feature"><span>Слайдер</span></label>
 								</li>
 								<li>
 									<input type="checkbox" name="features-block" id="features-block-feature" value="block-choice">
-									<label for="slider-feature">Блок преимуществ</label>
+									<label for="slider-feature"><span>Блок преимуществ</span></label>
 								</li>
 								<li>
 									<input type="checkbox" name="news" id="news-feature" value="news-choice" checked>
-									<label for="news-feature">Новости</label>
+									<label for="news-feature"><span>Новости</span></label>
 								</li>
 								<li>
 									<input type="checkbox" name="galery" id="galery-feature" value="galery-choice">
-									<label for="galery-feature">Галерея</label>
+									<label for="galery-feature"><span>Галерея</span></label>
 								</li>
 								<li>
 									<input type="checkbox" name="basket" id="basket-feature" value="basket-choice">
-									<label for="basket-feature">Корзина</label>
+									<label for="basket-feature"><span>Корзина</span></label>
 								</li>
 							</ul>
 						</fieldset>
-						<button name="view-btn" class="view-filter-btn">Показать</button>
+						<button name="view-btn" class="button view-filter-btn">Показать</button>
 					</form>
 				</section>
 				<section class="catalog">
 					<ul class="catalog-list">
 						<li class="catalog-item">
-							<a href="#" aria-label="Перейти на страницу шаблона Sedona">Sedona</a>
+							<a href="#" class="template-name" aria-label="Перейти на страницу шаблона Sedona">Sedona</a>
 							<p>Информационный сайт для туристов</p>
 							<a href="#" aria-label="Перейти на страницу шаблона Sedona">
 								<img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Sedona">
 							</a>
-							<a class="button" href="#" aria-label="Купить шаблон Sedona за 9 900 рублей.">9 900 руб.</a>
+							<a class="button btn-red" href="#" aria-label="Купить шаблон Sedona за 9 900 рублей.">9 900 руб.</a>
 						</li>
 						<li class="catalog-item">
-							<a href="#" aria-label="Перейти на страницу шаблона Pink">Pink app</a>
+							<a href="#" class="template-name" aria-label="Перейти на страницу шаблона Pink">Pink app</a>
 							<p>Продуктовый лендинг приложения для iOS и Android</p>
 							<a href="#" aria-label="Перейти на страницу шаблона Pink">
 								<img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Pink">
@@ -96,7 +101,7 @@
 							<a class="button" href="#" aria-label="Купить шаблон Pink за 9 900 рублей.">9 900 руб.</a>
 						</li>
 						<li class="catalog-item">
-							<a href="#" aria-label="Перейти на страницу шаблона барбершоп Бородинский">Barbershop</a>
+							<a href="#" class="template-name" aria-label="Перейти на страницу шаблона барбершоп Бородинский">Barbershop</a>
 							<p>Сайт салона красоты Для мужчин, да.</p>
 							<a href="#" aria-label="Перейти на страницу шаблона барбершопа Бородинский">
 								<img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон барбершопа Бородинский">
@@ -104,7 +109,7 @@
 							<a class="button" href="#" aria-label="Купить шаблон барбершоп Бородинский за 9 900 рублей.">9 900 руб.</a>
 						</li>
 						<li class="catalog-item">
-							<a href="#" aria-label="Перейти на страницу шаблона Mishka">Mishka</a>
+							<a href="#" class="template-name" aria-label="Перейти на страницу шаблона Mishka">Mishka</a>
 							<p>Интернет-магазин вязаных игрушек</p>
 							<a href="#" aria-label="Перейти на страницу шаблона Mishka">
 								<img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон Mishka">
@@ -112,7 +117,7 @@
 							<a class="button" href="#" aria-label="Купить шаблон Mishka за 9 900 рублей.">9 900 руб.</a>
 						</li>
 						<li class="catalog-item">
-							<a href="#" aria-label="Перейти на страницу шаблона A Plus">A Plus</a>
+							<a href="#" class="template-name" aria-label="Перейти на страницу шаблона A Plus">A Plus</a>
 							<p>Лендинг курсов повышения квалификации</p>
 							<a href="#" aria-label="Перейти на страницу шаблона Aplus">
 								<img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон A Plus">
@@ -120,7 +125,7 @@
 							<a class="button" href="#" aria-label="Купить шаблон A Plus за 9 900 рублей.">9 900 руб.</a>
 						</li>
 						<li class="catalog-item">
-							<a href="#" aria-label="Перейти на страницу шаблона Кваст">Кваст</a>
+							<a href="#" class="template-name" aria-label="Перейти на страницу шаблона Кваст">Кваст</a>
 							<p>Промо-сайт производителя крафтового кваса</p>
 							<a href="#" aria-label="Перейти на страницу шаблона Кваст">
 								<img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Кваст">
@@ -145,6 +150,7 @@
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</footer>
+			<!--
 			<section class="write-us">
 				<form class="write-us-form" action="#" method="post">
 					<h1>Напишите нам</h1>
@@ -158,5 +164,6 @@
 					<button name="send-btn" class="write-us-send-btn">Отправить</button>
 				</form>
 			</section>
+		-->
 		</body>
 </html>
