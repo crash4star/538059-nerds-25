@@ -27,9 +27,9 @@
 						<a href="#" aria-label="Раздел контакты">Контакты</a>
 					</li> 
 				</ul>
-				<div class="user-basket">
-					<a href="#" aria-label="Корзина"><img src="img/cart-icon.jpg" width="15" height="15" alt="Иконка корзины">Корзина</a>
-			    </div>
+				<a href="#" class="user-basket" aria-label="Корзина">
+					<img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина
+				</a>
 				</nav>
 				<h1>Магазин готовых шаблонов</h1>
 			</header>
@@ -39,43 +39,43 @@
 						<h2 class="visually-hidden">Фильтр шаблонов</h2>
 						<fieldset>
 							<legend>Сетка</legend>
-							<ul class="templates-grids">
+							<ul class="templates-settings">
 								<li>
 									<input type="radio" name="grid-btn" id="adaptive-grid" value="adaptive-grid-val" checked>
-								    <label for="adaptive-grid"><span>Адаптивная</span></label>
+								    <label for="adaptive-grid">Адаптивная</label>
 								</li>
 								<li>
 									<input type="radio" name="grid-btn" id="fixed-grid" value="fixed-grid-val">
-									<label for="fixed-grid"><span>Фиксированная</span></label>
+									<label for="fixed-grid">Фиксированная</label>
 								</li>
 								<li>
 									<input type="radio" name="grid-btn" id="elastic-grid" value="elastic-grid-val">
-							        <label for="fixed-grid"><span>Резиновая</span></label>
+							        <label for="fixed-grid">Резиновая</label>
 								</li>
 						    </ul>
 						</fieldset>
 						<fieldset>
 							<legend>Особенности</legend>
-							<ul class="templates-features">
+							<ul class="templates-settings">
 								<li>
 									<input type="checkbox" name="slider" id="slider-feature" value="slider-choice" checked>
-									<label for="slider-feature"><span>Слайдер</span></label>
+									<label for="slider-feature">Слайдер</label>
 								</li>
 								<li>
 									<input type="checkbox" name="features-block" id="features-block-feature" value="block-choice">
-									<label for="slider-feature"><span>Блок преимуществ</span></label>
+									<label for="slider-feature">Блок преимуществ</label>
 								</li>
 								<li>
 									<input type="checkbox" name="news" id="news-feature" value="news-choice" checked>
-									<label for="news-feature"><span>Новости</span></label>
+									<label for="news-feature">Новости</label>
 								</li>
 								<li>
 									<input type="checkbox" name="galery" id="galery-feature" value="galery-choice">
-									<label for="galery-feature"><span>Галерея</span></label>
+									<label for="galery-feature">Галерея</label>
 								</li>
 								<li>
 									<input type="checkbox" name="basket" id="basket-feature" value="basket-choice">
-									<label for="basket-feature"><span>Корзина</span></label>
+									<label for="basket-feature">Корзина</label>
 								</li>
 							</ul>
 						</fieldset>
@@ -147,14 +147,16 @@
 						<a class="social-button" href="#" aria-label="Страница Инстаграм">Instagram</a>
 					</li>
 				</ul>
-				<b>Давайте дружить, это выгодно!</b>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
+				<div class="sale-social">
+					<b>Давайте дружить, это выгодно!</b>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
+				</div>
 			</footer>
 			<!--
 			<section class="write-us">
 				<form class="write-us-form" action="#" method="post">
 					<h1>Напишите нам</h1>
-					<button type="button" class="write-us-close-btn"></button>
+					<button type="button" class="write-us-close-btn">Закрыть</button>
 					<label for="name-field">Ваше имя:</label>
 					<input type="text" name="first-last-name" id="name-field" placeholder="Имя Фамилия" value="enter-name">
 					<label for="mail-field">Ваш e-mail:</label>
