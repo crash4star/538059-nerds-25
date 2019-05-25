@@ -9,29 +9,35 @@
 	</head>
 		<body>
 			<header class="main-header">
-				<nav class="main-navigation">
-				<a class="main-header-logo" href="index.html">
-					<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
-				</a>
-				<ul class="site-navigation">
-					<li>
-						<a href="#" aria-label="Раздел студия">Студия</a>
-					</li>
-					<li>
-						<a href="#" aria-label="Раздел клиенты">Клиенты</a>
-					</li>
-					<li>
-						<a href="#" aria-label="Раздел магазин">Магазин</a>
-					</li>
-					<li>
-						<a href="#" aria-label="Раздел контакты">Контакты</a>
-					</li> 
-				</ul>
-				<a href="#" class="user-basket" aria-label="Корзина">
-					<img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина
-				</a>
-				</nav>
-				<h1>Магазин готовых шаблонов</h1>
+					<nav class="main-navigation">
+						<a class="main-header-logo" href="index.html">
+							<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
+						</a>
+						<div class="nav-container">
+							<ul class="site-navigation">
+								<li>
+									<a href="#" aria-label="Раздел студия">Студия</a>
+								</li>
+								<li>
+									<a href="#" aria-label="Раздел клиенты">Клиенты</a>
+								</li>
+								<li>
+									<a href="catalog.html" aria-label="Раздел магазин">Магазин</a>
+								</li>
+								<li>
+									<a href="#" aria-label="Раздел контакты">Контакты</a>
+								</li> 
+							</ul>
+						</div>
+						<div class="basket-container">
+							<a href="#" class="user-basket" aria-label="Корзина">
+								<img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина
+							</a>
+						</div>
+					</nav>
+					<div class="page-title">
+						<h1>Магазин готовых шаблонов</h1>
+					</div>
 			</header>
 			<main class="container">
 				<section class="filters">
@@ -39,51 +45,56 @@
 						<h2 class="visually-hidden">Фильтр шаблонов</h2>
 						<fieldset>
 							<legend>Сетка</legend>
-							<ul class="templates-settings">
-								<li>
-									<input type="radio" name="grid-btn" id="adaptive-grid" value="adaptive-grid-val" checked>
-								    <label for="adaptive-grid">Адаптивная</label>
-								</li>
-								<li>
-									<input type="radio" name="grid-btn" id="fixed-grid" value="fixed-grid-val">
-									<label for="fixed-grid">Фиксированная</label>
-								</li>
-								<li>
-									<input type="radio" name="grid-btn" id="elastic-grid" value="elastic-grid-val">
-							        <label for="fixed-grid">Резиновая</label>
-								</li>
-						    </ul>
+							<div class="filters-container">
+								<ul>
+									<li>
+										<input type="radio" name="grid-btn" id="adaptive-grid" value="adaptive-grid-val" checked>
+										<label for="adaptive-grid">Адаптивная</label>
+									</li>
+									<li>
+										<input type="radio" name="grid-btn" id="fixed-grid" value="fixed-grid-val">
+										<label for="fixed-grid">Фиксированная</label>
+									</li>
+									<li>
+										<input type="radio" name="grid-btn" id="elastic-grid" value="elastic-grid-val">
+										<label for="fixed-grid">Резиновая</label>
+									</li>
+								</ul>
+							</div>
 						</fieldset>
 						<fieldset>
 							<legend>Особенности</legend>
-							<ul class="templates-settings">
-								<li>
-									<input type="checkbox" name="slider" id="slider-feature" value="slider-choice" checked>
-									<label for="slider-feature">Слайдер</label>
-								</li>
-								<li>
-									<input type="checkbox" name="features-block" id="features-block-feature" value="block-choice">
-									<label for="slider-feature">Блок преимуществ</label>
-								</li>
-								<li>
-									<input type="checkbox" name="news" id="news-feature" value="news-choice" checked>
-									<label for="news-feature">Новости</label>
-								</li>
-								<li>
-									<input type="checkbox" name="galery" id="galery-feature" value="galery-choice">
-									<label for="galery-feature">Галерея</label>
-								</li>
-								<li>
-									<input type="checkbox" name="basket" id="basket-feature" value="basket-choice">
-									<label for="basket-feature">Корзина</label>
-								</li>
-							</ul>
+							<div class="filters-container">
+								<ul>
+									<li>
+										<input type="checkbox" name="slider" id="slider-feature" value="slider-choice" checked>
+										<label for="slider-feature">Слайдер</label>
+									</li>
+									<li>
+										<input type="checkbox" name="features-block" id="features-block-feature" value="block-choice">
+										<label for="slider-feature">Блок преимуществ</label>
+									</li>
+									<li>
+										<input type="checkbox" name="news" id="news-feature" value="news-choice" checked>
+										<label for="news-feature">Новости</label>
+									</li>
+									<li>
+										<input type="checkbox" name="galery" id="galery-feature" value="galery-choice">
+										<label for="galery-feature">Галерея</label>
+									</li>
+									<li>
+										<input type="checkbox" name="basket" id="basket-feature" value="basket-choice">
+										<label for="basket-feature">Корзина</label>
+									</li>
+								</ul>
+							</div>
 						</fieldset>
 						<button name="view-btn" class="button view-filter-btn">Показать</button>
 					</form>
 				</section>
 				<section class="catalog">
-					<ul class="catalog-list">
+					<div class="templates-menu">
+						<ul class="catalog-list">
 						<li class="catalog-item">
 							<a href="#" class="template-name" aria-label="Перейти на страницу шаблона Sedona">Sedona</a>
 							<p>Информационный сайт для туристов</p>
@@ -133,23 +144,28 @@
 							<a class="button" href="#" aria-label="Купить шаблон Кваст за 9 900 рублей.">9 900 руб.</a>
 						</li>
 					</ul>
+					</div>
 				</section>
 			</main>
 			<footer class="main-footer">
-				<ul class="footer-social">
-					<li>
-						<a class="social-button" href="#" aria-label="Группа Вконтакте">Вконтакте</a>
-					</li>
-					<li>
-						<a class="social-button" href="#" aria-label="Группа Фэйсбук">Facebook</a>
-					</li>
-					<li>
-						<a class="social-button" href="#" aria-label="Страница Инстаграм">Instagram</a>
-					</li>
-				</ul>
-				<div class="sale-social">
-					<b>Давайте дружить, это выгодно!</b>
-					<p>Скидка 10% для друзей из социальных сетей.</p>
+				<div class="footer-container">
+					<div class="social-container">
+						<ul class="footer-social">
+							<li>
+								<a class="social-button" href="#" aria-label="Группа Вконтакте">Вконтакте</a>
+							</li>
+							<li>
+								<a class="social-button" href="#" aria-label="Группа Фэйсбук">Facebook</a>
+							</li>
+							<li>
+								<a class="social-button" href="#" aria-label="Страница Инстаграм">Instagram</a>
+							</li>
+						</ul>
+					</div>
+					<div class="sales-container">
+						<b>Давайте дружить, это выгодно!</b>
+						<p>Скидка 10% для друзей из социальных сетей.</p>
+					</div>
 				</div>
 			</footer>
 			<!--
