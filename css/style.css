@@ -13,7 +13,7 @@ a {
 	text-decoration: none;
 }
 
-/* Помощь в сетке
+/*Помощь в сетке
 body > * {
 	outline: 2px solid blue;
 }
@@ -52,17 +52,11 @@ body > * > * > * > * > *{
 }
 
 .main-header-logo {
+	margin-right: 200px;
 	width: 160px;
 	height: 65px;
 }
 
-.nav-container {
-	margin-left: 200px;
-}
-
-.basket-container {
-	margin-left: 140px;
-}
 .main-header-logo:hover {
 	opacity: 0.8;
 }
@@ -95,6 +89,7 @@ body > * > * > * > * > *{
 }
 
 .user-basket {
+	margin-left: 245px;
 	color: #000000;
 }
 
@@ -189,16 +184,11 @@ body > * > * > * > * > *{
 } 
 
 .main-footer {
-	margin: 0;
-	padding: 0px;
-	color: #000000;
-	background-color: #ffffff;
-}
-
-.footer-container {
 	display: flex;
-	padding: 70px 0;
+	padding-top: 70px;
+	padding-bottom: 80px;
 	margin: 0 140px;
+	background-color: #ffffff;
 }
 
 .footer-social a {
@@ -208,10 +198,6 @@ body > * > * > * > * > *{
 .footer-social {
 	text-align: left;
 	list-style: none;
-}
-
-.social-container {
-	width: 260px;
 	margin-right: 140px;
 }
 
@@ -306,6 +292,10 @@ body > * > * > * > * > *{
 	margin: -1px;
 }
 
+.filters {
+	margin-right: 140px;
+}
+
 .filters legend {
 	font-size: 18px;
 	line-height: 30px;
@@ -391,13 +381,9 @@ body > * > * > * > * > *{
 	margin-top: 260px;
 }
 
-.filters-container {	
-	width: 260px;
-}
 
-.templates-menu {
+.catalog {
 	width: 760px;
-	margin-left: 140px;
 }
 
 .catalog-list {
