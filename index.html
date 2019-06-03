@@ -85,22 +85,20 @@
 			<section class="write-us">
 				<form class="write-us-form" action="#" method="post">
 					<h1>Напишите нам</h1>
-					<button type="button" class="write-us-close-btn">
-						<img src="img/close-cross.svg" alt="Кнопка закрытия формы отправки">
-					</button>
+					<button type="button" class="write-us-close-btn" aria-label="Кнопка закрытия формы отправки"></button>
 					<p class="form-item">
 						<label for="user-name">Ваше имя:</label>
-						<input type="text" id="user-name" name="first-last-name" placeholder="Имя Фамилия" value="">
+						<input type="text" id="user-name" name="first-last-name" placeholder="Имя Фамилия">
 					</p>
 					<p class="form-item">
 						<label for="user-mail">Ваш e-mail:</label>
-						<input type="text" id="user-mail" name="first-last-name" placeholder="email@example.com" value="">
+						<input type="text" id="user-mail" name="first-last-name" placeholder="email@example.com">
 					</p>
 					<p class="form-text-item">
 						<label for="mail-content">Текст письма:</label>
 						<textarea name="mail-body" id="mail-content" placeholder="В свободной форме"></textarea>
 					</p>
-					<button name="send-btn" class="send-write-us-form btn-red ">Отправить</button>
+					<button name="send-btn" class="send-write-us-form btn-red" aria-label="Кнопка отправки формы">Отправить</button>
 				</form>
 			</section>
 		</body>

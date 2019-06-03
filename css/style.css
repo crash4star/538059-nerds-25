@@ -309,26 +309,21 @@ body > * > * > * > * > *{
 	margin-right: 440px;
 }
 
-.write-us-form button[type="button"] {
+.write-us-close-btn {
 	border: none;
 	background-color: transparent;
-	width: 21px;
-	height: 21px;
-}
-
-.write-us-close-btn img {
+	background-image: url(../img/close-cross.svg);
+	background-size: 21px 21px;
 	width: 21px;
 	height: 21px;
 	opacity: 0.3;
 }
 
-.write-us-close-btn:hover img {
-	cursor: pointer;
+.write-us-close-btn:hover {
 	opacity: 1;
 }
 
-.write-us-close-btn:focus img {
-	cursor: pointer;
+.write-us-close-btn:focus {
 	opacity: 0.1;
 }
 
@@ -397,7 +392,7 @@ input::-webkit-input-placeholder {
 	padding: 15px;
 }
 
-textarea::placeholder {
+.form-text-item textarea::placeholder {
 	color: #444444;
 	opacity: 0.5;
 }
@@ -418,11 +413,6 @@ textarea::placeholder {
 	line-height: 18px;
 	text-transform: uppercase;
 }
-
-.send-write-us-form:hover {
-	cursor: pointer;
-}
-
 /*Правило для невалидных полей форм*/
 .input-invalid {
 	border-color: red;
@@ -509,27 +499,46 @@ textarea::placeholder {
 }
 
 .catalog-item img {
-	display: block;
-	margin-top: -40px;
+	margin-top: -41px;
 }
 
 .catalog-item {
+	width: 360px;
+	min-height: 576px;
 	display: block;
 	position: relative;
-	background-image: url(../img/browser-opacity.png);
+}
+
+.catalog-item:before {
+	content: "";
+	position: absolute;
+	width: 360px;
+	height: 40px;
+	background-image: url(../img/browser.svg);
+	background-repeat: repeat;
+	background-color: #ffffff;
+	opacity: 0.12;
+}
+
+.catalog-item:hover {
+	box-shadow: 0 6px 15px 0 rgba(0,0,0,0.25);
+}
+
+.catalog-item:hover:before {
+	opacity: 1;
+}
+.catalog-item:hover .up-price {
+	display: block;
+}
+
+.up-price::before {
+	display: block;
+	position: relative;
+	background-image: url(../img/browser.svg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-size: 360px 40px;
 	background-color: #ffffff;
-}
-
-.catalog-item:hover {
-	background-image: url(../img/browser.png);
-	box-shadow: 0 6px 15px 0 rgba(0,0,0,0.25);
-}
-
-.catalog-item:hover .up-price {
-	display: block;
 }
 
 .up-price {
