@@ -14,7 +14,7 @@ a {
 	text-decoration: none;
 }
 
-/*Помощь в сетке
+/Помощь в сетке
 body > * {
 	outline: 2px solid blue;
 }
@@ -254,10 +254,8 @@ body > * > * > * > * > * {
 
 .sales-social-footer {
 	display: flex;
-	align-items: center;
 	width: 1160px;
 	margin: 0 auto;
-	padding-top: 70px;
 	padding-bottom: 80px;
 	background-color: #ffffff;
 }
@@ -267,12 +265,15 @@ body > * > * > * > * > * {
 }
 
 .footer-social {
+	margin: 0:
+	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	width: 260px;
+	align-items: center;
 	text-align: left;
 	list-style: none;
-	margin-right: 140px;
+	margin-right: 125px;
 }
 
 .sales-container b {
@@ -810,19 +811,31 @@ body > * > * > * > * > * {
 .clients {
 	display: flex;
 	align-items: center;
-	width: 1090px;
+	position: relative;
+	width: 1160px;
 	margin: 0 auto;
 	padding-top: 45px;
-	padding-bottom: 80px;
+	padding-bottom: 45px;
+	margin-bottom: 80px;
 	border-bottom: 2px solid #eeeeee;
 }
 
 .client-image {
+	display: inline-block;
+}
+
+.client-image:before {
+	content: "";
 	display: block;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: black;
 }
 
 .client-image:first-child {
 	margin-right: 100px;
+	margin-left: 30px;
 }
 
 .client-image:nth-child(2) {
@@ -846,32 +859,49 @@ body > * > * > * > * > * {
 }
 
 .contacts {
+	width: 320px;
 	position: absolute;
 	top: 54px;
 	left: 140px;
 	background-color: #ffffff;
-	padding: 50px 47px;
 }
 
 .contacts h3 {
+	margin: 0;
+	padding: 0;
 	font-size: 18px;
 	line-height: 30px;
 	color: 000000;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 48px;
+	padding-bottom: 22px;
 }
 
 .contacts p {
+	margin: 0;
+	padding: 0;
 	font-size: 16px;
 	line-height: 18px;
 	color: #666666;
+	padding-left: 50px;
+	margin-bottom: 15px;
 }
 
 .contacts-btn {
+	display: inline-block;
+	text-align: center;
+	width: 220px;
 	border: none;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
 	color: #ffffff;
 	text-transform: uppercase;
+	margin-top: 25px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 47px;
 }
 
 .slider-container {
@@ -1021,12 +1051,12 @@ body > * > * > * > * > * {
   border: none;
 }
 
-.button:hover,
-.button:focus {
+.slider-button:hover,
+.slider-button:focus {
   background-color: #e74246;
 }
 
-.button:active {
+.slider-button:active {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
