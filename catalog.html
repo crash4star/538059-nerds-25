@@ -28,7 +28,8 @@
 						</li> 
 					</ul>
 					<a href="#" class="user-basket" aria-label="Корзина">
-						<img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">Корзина
+						<img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">
+						<p>Корзина</p>
 					</a>
 				</nav>
 				<div class="page-title">
@@ -37,47 +38,74 @@
 			</header>
 			<main class="container">
 				<section class="filters">
-					<form action="#" method="get">
+					<form class="range-fieldset" method="get" action="https://echo.htmlacademy.ru">
+						      <fieldset class="filter-item">
+						      	<legend>Стоимость:</legend>
+						      	<div class="range-filter">
+						      		<div class="range-controls">
+						      			<div class="scale">
+						      				<div class="bar"></div>
+						      			</div>
+						      			<div class="toggle toggle-min"></div>
+						      			<div class="toggle toggle-max"></div>
+						      		</div>
+						      		<div class="price-controls">
+						      			<label class="min-price">от 
+						      				<input name="min-price" type="text" value="0">
+						      			</label>
+						      			<label class="max-price">до 
+						      				<input name="max-price" type="text" value="15000">
+						      			</label>
+						      		</div>
+						      	</div>
+						      </fieldset>
+					</form>
+					<form class="radio-filter" action="https://echo.htmlacademy.ru" method="get">
 						<h2 class="visually-hidden">Фильтр шаблонов</h2>
 						<fieldset>
 							<legend>Сетка</legend>
 								<ul>
 									<li>
-										<input type="radio" name="grid-btn" id="adaptive-grid" value="adaptive-grid-val" checked>
-										<label for="adaptive-grid">Адаптивная</label>
+										<input class="visually-hidden" type="radio" name="grid-btn" id="adaptive-grid" value="adaptive-grid-val" disabled>
+										<span class="radio-indicator"></span>
+										<label class="filter-name" for="adaptive-grid">Адаптивная</label>
 									</li>
 									<li>
-										<input type="radio" name="grid-btn" id="fixed-grid" value="fixed-grid-val">
-										<label for="fixed-grid">Фиксированная</label>
+										<input class="visually-hidden" type="radio" name="grid-btn" id="fixed-grid" value="fixed-grid-val">
+										<span class="radio-indicator"></span>
+										<label class="filter-name" for="fixed-grid">Фиксированная</label>
 									</li>
 									<li>
-										<input type="radio" name="grid-btn" id="elastic-grid" value="elastic-grid-val">
-										<label for="fixed-grid">Резиновая</label>
+										<input class="visually-hidden" type="radio" name="grid-btn" id="elastic-grid" value="elastic-grid-val">
+										<span class="radio-indicator"></span>
+										<label class="filter-name" for="fixed-grid">Резиновая</label>
 									</li>
 								</ul>
 						</fieldset>
-						<fieldset>
+					</form>
+					<form class="checkbox-filter" action="https://echo.htmlacademy.ru" method="get">
+						<fieldset class="checkbox-filter">
 							<legend>Особенности</legend>
 								<ul>
 									<li>
-										<input type="checkbox" name="slider" id="slider-feature" value="slider-choice" checked>
-										<label for="slider-feature">Слайдер</label>
+										<input class="visually-hidden" type="checkbox" name="slider" id="slider-feature" value="slider-choice" checked>
+										<label class="filter-name" for="slider-feature">Слайдер</label>
 									</li>
 									<li>
-										<input type="checkbox" name="features-block" id="features-block-feature" value="block-choice">
-										<label for="slider-feature">Блок преимуществ</label>
+										<input class="visually-hidden" type="checkbox" name="features-block" id="features-block-feature" value="block-choice">
+										<label class="filter-name" for="slider-feature">Блок преимуществ</label>
 									</li>
 									<li>
-										<input type="checkbox" name="news" id="news-feature" value="news-choice" checked>
-										<label for="news-feature">Новости</label>
+										<input class="visually-hidden" type="checkbox" name="news" id="news-feature" value="news-choice" checked>
+										<label class="filter-name" for="news-feature">Новости</label>
 									</li>
 									<li>
-										<input type="checkbox" name="galery" id="galery-feature" value="galery-choice">
-										<label for="galery-feature">Галерея</label>
+										<input class="visually-hidden" type="checkbox" name="galery" id="galery-feature" value="galery-choice">
+										<label class="filter-name" for="galery-feature">Галерея</label>
 									</li>
 									<li>
-										<input type="checkbox" name="basket" id="basket-feature" value="basket-choice">
-										<label for="basket-feature">Корзина</label>
+										<input class="visually-hidden" type="checkbox" name="basket" id="basket-feature" value="basket-choice">
+										<label class="filter-name" for="basket-feature">Корзина</label>
 									</li>
 								</ul>
 						</fieldset>
@@ -85,13 +113,21 @@
 					</form>
 				</section>
 				<section class="catalog">
+					<div class="sorting">
+						<h2>Сортировать</h2>
+						<div class="sorting-item">
+							<p class="active-sorting">По цене</p>
+							<p>По типу</p>
+							<p>По названию</p>
+						</div>
+					</div>
 					<div class="templates-menu">
 						<ul class="catalog-list">
 						<li class="catalog-item">
 							<div class="up-price">
 								<h2><a href="#" class="template-name" aria-label="Перейти на страницу шаблона Sedona">Sedona</a></h2>
 								<p>Информационный сайт <br>для туристов</p>
-								<a class="button btn-red catalog-btn" href="#" aria-label="Купить шаблон Sedona за 9 900 рублей.">9 900 руб.</a>
+								<a class="btn-red catalog-btn" href="#" aria-label="Купить шаблон Sedona за 9 900 рублей.">9 900 руб.</a>
 							</div>
 							<a href="#" aria-label="Перейти на страницу шаблона Sedona">
 								<img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Sedona">
@@ -101,7 +137,7 @@
 							<div class="up-price">
 								<h2><a href="#" class="template-name" aria-label="Перейти на страницу шаблона Pink">Pink app</a></h2>
 								<p>Продуктовый лендинг <br>приложения для iOS и Android</p>
-								<a class="button btn-red catalog-btn" href="#" aria-label="Купить шаблон Pink за 9 900 рублей.">9 900 руб.</a>
+								<a class="btn-red catalog-btn" href="#" aria-label="Купить шаблон Pink за 9 900 рублей.">9 900 руб.</a>
 							</div>
 							<a href="#" aria-label="Перейти на страницу шаблона Pink">
 								<img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Pink">
@@ -111,7 +147,7 @@
 							<div class="up-price">
 								<h2><a href="#" class="template-name" aria-label="Перейти на страницу шаблона барбершоп Бородинский">Barbershop</a></h2>
 								<p>Сайт салона красоты.<br>Для мужчин, да.</p>
-								<a class="button btn-red catalog-btn" href="#" aria-label="Купить шаблон барбершоп Бородинский за 9 900 рублей.">9 900 руб.</a>
+								<a class="btn-red catalog-btn" href="#" aria-label="Купить шаблон барбершоп Бородинский за 9 900 рублей.">9 900 руб.</a>
 							</div>
 							<a href="#" aria-label="Перейти на страницу шаблона барбершопа Бородинский">
 								<img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон барбершопа Бородинский">
@@ -121,7 +157,7 @@
 							<div class="up-price">
 								<h2><a href="#" class="template-name" aria-label="Перейти на страницу шаблона Mishka">Mishka</a></h2>
 								<p>Интернет-магазин <br>вязаных игрушек</p>
-								<a class="button btn-red catalog-btn" href="#" aria-label="Купить шаблон Mishka за 9 900 рублей.">9 900 руб.</a>
+								<a class="btn-red catalog-btn" href="#" aria-label="Купить шаблон Mishka за 9 900 рублей.">9 900 руб.</a>
 							</div>
 							<a href="#" aria-label="Перейти на страницу шаблона Mishka">
 								<img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон Mishka">
@@ -131,7 +167,7 @@
 							<div class="up-price">
 								<h2><a href="#" class="template-name" aria-label="Перейти на страницу шаблона A Plus">A Plus</a></h2>
 								<p>Лендинг курсов повышения <br>квалификации</p>
-								<a class="button btn-red catalog-btn" href="#" aria-label="Купить шаблон A Plus за 9 900 рублей.">9 900 руб.</a>
+								<a class="btn-red catalog-btn" href="#" aria-label="Купить шаблон A Plus за 9 900 рублей.">9 900 руб.</a>
 							</div>
 							<a href="#" aria-label="Перейти на страницу шаблона Aplus">
 								<img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон A Plus">
@@ -141,7 +177,7 @@
 							<div class="up-price">
 								<h2><a href="#" class="template-name" aria-label="Перейти на страницу шаблона Кваст">Кваст</a></h2>
 								<p>Промо-сайт производителя <br>крафтового кваса</p>
-								<a class="button btn-red catalog-btn" href="#" aria-label="Купить шаблон Кваст за 9 900 рублей.">9 900 руб.</a>
+								<a class="btn-red catalog-btn" href="#" aria-label="Купить шаблон Кваст за 9 900 рублей.">9 900 руб.</a>
 							</div>
 							<a href="#" aria-label="Перейти на страницу шаблона Кваст">
 								<img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Кваст">
@@ -157,8 +193,8 @@
 					<img src="img/map-marker.png" class="map-marker" width="231" height="190" alt="Местоположение на карте 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
 					<div class="contacts">
 						<h3>NЁRDS DESIGN STUDIO</h3>
-						<p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-						<p>тел. +7 (812) 275-75-75</p>
+						<p class="address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+						<p class="phone-number">тел. +7 (812) 275-75-75</p>
 						<button class="btn-red contacts-btn">Напишите нам</button>
 					</div>
 				</section>
@@ -197,7 +233,7 @@
 						<label for="user-name">Ваше имя:</label>
 						<input type="text" id="user-name" name="first-last-name" placeholder="Имя Фамилия">
 					</p>
-					<p class="form-item">
+					<p class="form-item-2">
 						<label for="user-mail">Ваш e-mail:</label>
 						<input type="text" id="user-mail" name="first-last-name" placeholder="email@example.com">
 					</p>
