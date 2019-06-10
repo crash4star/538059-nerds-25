@@ -66,15 +66,15 @@
 								<ul>
 									<li>
 										<input class="radio-btn" type="radio" name="grid-btn" id="adaptive-grid" value="adaptive-grid-val" checked>
-										<label class="filter-name" for="adaptive-grid">Адаптивная</label>
+										<label class="filter-name-radio" for="adaptive-grid">Адаптивная</label>
 									</li>
 									<li>
 										<input class="radio-btn" type="radio" name="grid-btn" id="fixed-grid" value="fixed-grid-val">
-										<label class="filter-name" for="fixed-grid">Фиксированная</label>
+										<label class="filter-name-radio" for="fixed-grid">Фиксированная</label>
 									</li>
 									<li>
 										<input class="radio-btn" type="radio" name="grid-btn" id="elastic-grid" value="elastic-grid-val">
-										<label class="filter-name" for="fixed-grid">Резиновая</label>
+										<label class="filter-name-radio" for="elastic-grid">Резиновая</label>
 									</li>
 								</ul>
 						</fieldset>
@@ -85,23 +85,23 @@
 								<ul>
 									<li>
 										<input class="check-btn" type="checkbox" name="slider" id="slider-feature" value="slider-choice" checked>
-										<label class="filter-name" for="slider-feature">Слайдер</label>
+										<label class="filter-name-check" for="slider-feature">Слайдер</label>
 									</li>
 									<li>
 										<input class="check-btn" type="checkbox" name="features-block" id="features-block-feature" value="block-choice">
-										<label class="filter-name" for="slider-feature">Блок преимуществ</label>
+										<label class="filter-name-check" for="features-block-feature">Блок преимуществ</label>
 									</li>
 									<li>
 										<input class="check-btn" type="checkbox" name="news" id="news-feature" value="news-choice" checked>
-										<label class="filter-name" for="news-feature">Новости</label>
+										<label class="filter-name-check" for="news-feature">Новости</label>
 									</li>
 									<li>
 										<input class="check-btn" type="checkbox" name="galery" id="galery-feature" value="galery-choice">
-										<label class="filter-name" for="galery-feature">Галерея</label>
+										<label class="filter-name-check" for="galery-feature">Галерея</label>
 									</li>
 									<li>
 										<input class="check-btn" type="checkbox" name="basket" id="basket-feature" value="basket-choice">
-										<label class="filter-name" for="basket-feature">Корзина</label>
+										<label class="filter-name-check" for="basket-feature">Корзина</label>
 									</li>
 								</ul>
 						</fieldset>
@@ -113,9 +113,9 @@
 					<div class="sorting">
 						<h2>Сортировать</h2>
 						<div class="sorting-item">
-							<p class="active-sorting">По цене</p>
-							<p>По типу</p>
-							<p>По названию</p>
+							<a href="#" class="active-sorting">По цене</a>
+							<a href="#">По типу</a>
+							<a href="#">По названию</a>
 						</div>
 					</div>
 					<div class="templates-menu">
@@ -179,6 +179,20 @@
 							<a href="#" aria-label="Перейти на страницу шаблона Кваст">
 								<img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Кваст">
 							</a>
+						</li>
+					</ul>
+					<ul class="page-navigation">
+						<li>
+							<a href="#" class="page-btn active-page-navigation">1</a>
+						</li>
+						<li>
+							<a href="#" class="page-btn">2</a>
+						</li>
+						<li>
+							<a href="#" class="page-btn">3</a>
+						</li>
+						<li>
+							<a href="#" class="next-btn">Следующая</a>
 						</li>
 					</ul>
 					</div>
