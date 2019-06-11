@@ -1,5 +1,4 @@
 body {
-	
 	margin: 0 auto;
 	padding: 0;
 	font-family: "Roboto", Arial, sans-serif;
@@ -356,9 +355,13 @@ body > * > * > * > * > *{
 	opacity: 0.3;
 }
 
+.write-us-show {
+	display: block;
+}
+
 .write-us {
 	display: none;
-	position: absolute; 
+	position: fixed; 
 	left: 50%; 
 	top: 50%; 
 	transform: translate(-50%, -50%);
@@ -1101,7 +1104,7 @@ body > * > * > * > * > *{
 	padding: 0;
 	font-size: 18px;
 	line-height: 30px;
-	color: 000000;;
+	color: #000000;;
 	padding-top: 48px;
 	padding-bottom: 22px;
 	padding-left: 50px;
@@ -1449,27 +1452,12 @@ body > * > * > * > * > *{
 	opacity: 1;
 }
 
-.sorting-item:before {
-	content: "";
+.max-min {
 	position: absolute;
 	right: 0;
 	width: 11px;
 	height: 10px;
 	background-image: url(../img/icon-down-dir.svg);
-}
-
-.sorting-item:after {
-	content: "";
-	position: absolute;
-	top: 2px;
-	
-	width: 0;
-	height: 0;
-	border: 10px solid #a6a6a6;
-	border-left: 6px solid transparent;
-	border-right: 6px solid transparent;
-	border-bottom: 0px solid transparent;
-	transform: rotate(180deg);
 }
 
 .container {

@@ -61,8 +61,8 @@
 						      </fieldset>
 						<h2 class="visually-hidden">Фильтр шаблонов</h2>
 						<fieldset>
-							<div class="type-templates">
 							<legend>Сетка</legend>
+							<div class="type-templates">
 								<ul>
 									<li>
 										<input class="radio-btn" type="radio" name="grid-btn" id="adaptive-grid" value="adaptive-grid-val" checked>
@@ -77,8 +77,8 @@
 										<label class="filter-name-radio" for="elastic-grid">Резиновая</label>
 									</li>
 								</ul>
+								</div>
 						</fieldset>
-					</div>
 					<div class="type-block">
 						<fieldset class="checkbox-filter">
 							<legend>Особенности</legend>
@@ -116,6 +116,8 @@
 							<a href="#" class="active-sorting">По цене</a>
 							<a href="#">По типу</a>
 							<a href="#">По названию</a>
+							<a href="#" class="max-min" aria-label="От большего ,к меньшему"></a>
+							<a href="#" class="min-max"aria-label="От меньшего ,к большому"></a>
 						</div>
 					</div>
 					<div class="templates-menu">
@@ -200,7 +202,7 @@
 			</main>
 			<footer class="main-footer">
 				<section class="map-info">
-					<img src="img/map.jpg" class="image-map" width="100%" alt="Карта">
+					<img src="img/map.jpg" class="image-map" alt="Карта">
 					<img src="img/map-marker.png" class="map-marker" width="231" height="190" alt="Местоположение на карте 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
 					<div class="contacts">
 						<h3>NЁRDS DESIGN STUDIO</h3>
@@ -244,7 +246,7 @@
 						<label for="user-name">Ваше имя:</label>
 						<input type="text" id="user-name" name="first-last-name" placeholder="Имя Фамилия">
 					</p>
-					<p class="form-item">
+					<p class="form-item-2">
 						<label for="user-mail">Ваш e-mail:</label>
 						<input type="text" id="user-mail" name="first-last-name" placeholder="email@example.com">
 					</p>
