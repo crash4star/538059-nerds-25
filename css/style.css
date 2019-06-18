@@ -1111,6 +1111,7 @@ body > * > * > * > * > *{
 	padding: 0;
 	width: 100%;
 	min-height: 420px;
+	border: none;
 }
 
 .map-screen {
